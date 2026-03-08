@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Misty Event | Event Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; background-color: #050505; color: #e5e5e5; }
+        h1, h2, h3, .logo-font { font-family: 'Playfair Display', serif; }
+        
+        .gold-text {
+            background: linear-gradient(to right, #D4AF37, #FFF2CD, #AA771C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .gold-bg {
+            background: linear-gradient(to right, #D4AF37, #AA771C);
+        }
+        
+        .misty-gradient {
+            background: radial-gradient(circle at top, #1a1a2e 0%, #050505 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .insta-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 logo-font text-2xl font-bold tracking-wider gold-text">
+                    The Misty Event
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#about" class="hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                        <a href="#services" class="hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition">Services</a>
+                        <a href="#contact" class="hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center misty-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 gold-text leading-tight">Creating Moments <br> That Matter.</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
+                Modern event management in Rajasthan. We turn your ideas into beautifully planned experiences.
+            </p>
+            <a href="#contact" class="inline-block gold-bg text-black font-semibold px-8 py-4 rounded-full text-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition transform hover:-translate-y-1">
+                Plan Your Event
+            </a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 logo-font text-white">About Us</h2>
+                    <div class="w-20 h-1 gold-bg mb-8"></div>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <strong class="text-white">The Misty Event</strong> is a modern event management company that organizes all types of events with creativity and precision. We turn your ideas into beautifully planned experiences that feel special and unforgettable.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        We believe every event should be simple, meaningful, and perfectly executed. From planning to final execution, we handle every detail so you can enjoy your moment stress-free.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="glass-card p-8 rounded-2xl text-center border-t-4 border-t-yellow-500">
+                        <i class="fas fa-gem text-4xl mb-4 gold-text"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Our Promise</h3>
+                        <p class="text-gray-400">Clean designs.<br>Smooth coordination.<br>Memorable experiences.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl text-center border-t-4 border-t-yellow-500 mt-0 sm:mt-12">
+                        <i class="fas fa-map-marker-alt text-4xl mb-4 gold-text"></i>
+                        <h3 class="text-xl font-semibold text-white mb-2">Service Area</h3>
+                        <p class="text-gray-400">Proudly serving across<br><strong class="text-white">Rajasthan</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 logo-font text-white">What We Do</h2>
+                <div class="w-20 h-1 gold-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">We organize a wide range of events tailored to your unique needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-rings text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Weddings</h3>
+                    <p class="text-gray-400">Elegant and seamless wedding planning from pre-wedding rituals to the grand reception.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-birthday-cake text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Birthday Parties</h3>
+                    <p class="text-gray-400">Creative themes and flawless execution for unforgettable birthday celebrations.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-briefcase text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Corporate Events</h3>
+                    <p class="text-gray-400">Professional management for conferences, seminars, and corporate gatherings.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-music text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Concerts</h3>
+                    <p class="text-gray-400">Large-scale event production, artist management, and crowd coordination.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-glass-cheers text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Private Celebrations</h3>
+                    <p class="text-gray-400">Intimate gatherings and exclusive parties designed just for your close circle.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-300">
+                    <i class="fas fa-tree text-4xl mb-6 gold-text group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Outdoor & Special</h3>
+                    <p class="text-gray-400">Unique destination events and specialized outdoor setups in beautiful locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="py-20 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4 logo-font text-white">Meet The Team</h2>
+            <div class="w-20 h-1 gold-bg mx-auto mb-16"></div>
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full border-2 border-yellow-600 mx-auto flex items-center justify-center bg-gray-900 mb-4">
+                        <i class="fas fa-user-tie text-4xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white">Ashish Panwar</h3>
+                    <p class="text-yellow-500">Founder & Organizer</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 rounded-full border-2 border-yellow-600 mx-auto flex items-center justify-center bg-gray-900 mb-4">
+                        <i class="fas fa-user-tie text-4xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white">Kapil Soni</h3>
+                    <p class="text-yellow-500">Co-Founder & Organizer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Instagram Section -->
+    <section id="contact" class="py-24 bg-black border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 logo-font text-white">Let's Connect</h2>
+                <div class="w-20 h-1 gold-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Ready to plan your next big moment? Get in touch with us.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Contact Info -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col justify-center">
+                    <h3 class="text-3xl mb-8 font-semibold text-white logo-font">Contact Details</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-black mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Call Us</p>
+                                <a href="tel:+919079228920" class="text-white text-lg font-medium hover:text-yellow-500 block">+91 90792 28920</a>
+                                <a href="tel:+918003181975" class="text-white text-lg font-medium hover:text-yellow-500 block">+91 80031 81975</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-black mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Email Us</p>
+                                <a href="mailto:ashishpanwar7462@gmail.com" class="text-white text-lg font-medium hover:text-yellow-500">ashishpanwar7462@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center text-black mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Service Area</p>
+                                <p class="text-white text-lg font-medium">Rajasthan, India</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Instagram QR Code Section -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col items-center justify-center border border-pink-900/30 relative overflow-hidden">
+                    <!-- Subtle background glow -->
+                    <div class="absolute inset-0 insta-gradient opacity-10 blur-3xl"></div>
+                    
+                    <div class="relative z-10 text-center w-full">
+                        <h3 class="text-2xl mb-6 font-semibold text-white flex justify-center items-center gap-3">
+                            <i class="fab fa-instagram text-3xl text-pink-500"></i> Follow on Instagram
+                        </h3>
+                        
+                        <!-- The clickable QR Code Card -->
+                        <a href="https://www.instagram.com/themistyevents?igsh=MTZ5YXAwZ2EzYzBtZA==" target="_blank" class="block mx-auto transform transition-transform hover:scale-105 duration-300 w-fit">
+                            <div class="bg-white p-4 rounded-2xl shadow-2xl">
+                                <!-- Actual QR Code Generated from your exact link -->
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.instagram.com/themistyevents?igsh=MTZ5YXAwZ2EzYzBtZA==" 
+                                     alt="The Misty Event Instagram QR Code" 
+                                     class="w-56 h-56 object-contain rounded-lg">
+                                <div class="mt-4 pb-2 text-center">
+                                    <span class="text-xl font-bold bg-clip-text text-transparent insta-gradient tracking-wide uppercase">
+                                        @themistyevents
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- Direct Link Button -->
+                        <a href="https://www.instagram.com/themistyevents?igsh=MTZ5YXAwZ2EzYzBtZA==" target="_blank" class="mt-8 inline-flex items-center gap-3 px-8 py-4 rounded-full text-white font-semibold insta-gradient hover:opacity-90 transition shadow-[0_0_15px_rgba(220,39,67,0.4)]">
+                            <i class="fab fa-instagram text-xl"></i> Open Instagram Link
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#050505] py-8 border-t border-gray-900 text-center">
+        <p class="text-gray-500">&copy; 2024 The Misty Event. All rights reserved.</p>
+    </footer>
+</body>
+</html>
